@@ -1,0 +1,227 @@
+/* GENERAL STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #173b70;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #102c52;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #173b70;
+}
+
+/* WELCOME */
+
+.welcome {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.welcome h1 {
+    font-size: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1769aa;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.btn:hover {
+    background-color: #104b80;
+}
+
+/* EVENTS */
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    flex: 1 1 220px;
+    background-color: #eaf2ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #1769aa;
+}
+
+/* FORM */
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+fieldset {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+fieldset label,
+.terms {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin: 8px 12px 0 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 3px solid #e49b16;
+    outline-offset: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #1769aa;
+    color: white;
+    padding: 14px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #104b80;
+}
+
+/* ANNOUNCEMENTS */
+
+aside {
+    background-color: #eaf2ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #102c52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
